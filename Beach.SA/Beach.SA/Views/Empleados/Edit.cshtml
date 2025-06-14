@@ -1,0 +1,140 @@
+﻿@model Beach.SA.Models.Reserva
+
+@{
+    var cedula = ViewData["Cedula"];
+}
+
+<h4>Reserva</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditConfirmed">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label asp-for="CedCliente" class="control-label"></label>
+                <input asp-for="CedCliente" class="form-control" />
+                <span asp-validation-for="CedCliente" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaqueteId" class="control-label mt-3"></label>
+                <select id="PaqueteId" name="PaqueteId" class="form-control" onchange="updateValues()">
+                    <option value="">Seleccione un paquete</option>
+                    @foreach (var paquete in Model.PaquetesDisponibles)
+                    {
+                        <option value="@paquete.PaqueteId"
+                                data-costo-persona="@paquete.CostoPersona"
+                                data-prima="@paquete.PrimaPorcentaje"
+                                data-nombre="@paquete.Nombre">
+                            @paquete.Nombre
+                        </option>
+                    }
+                </select>
+                <span asp-validation-for="PaqueteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CantidadNoches" class="control-label mt-3"></label>
+                <input asp-for="CantidadNoches" class="form-control" oninput="updateValues()" />
+                <span asp-validation-for="CantidadNoches" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MontoTotalColones" class="control-label mt-3"></label>
+                <input asp-for="MontoTotalColones" class="form-control" readonly />
+                <span asp-validation-for="MontoTotalColones" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MontoTotalDolares" class="control-label mt-3"></label>
+                <input asp-for="MontoTotalDolares" class="form-control" readonly />
+                <span asp-validation-for="MontoTotalDolares" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MontoPrima" class="control-label mt-3"></label>
+                <input asp-for="MontoPrima" class="form-control" readonly />
+                <span asp-validation-for="MontoPrima" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descuento" class="control-label"></label>
+                <input asp-for="Descuento" class="form-control" />
+                <span asp-validation-for="Descuento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaReserva" class="control-label"></label>
+                <input asp-for="FechaReserva" class="form-control" />
+                <span asp-validation-for="FechaReserva" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroCheque" class="control-label"></label>
+                <input asp-for="NumeroCheque" class="form-control" />
+                <span asp-validation-for="NumeroCheque" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="MetodoPago" class="control-label mt-3"></label>
+                <select asp-for="MetodoPago">
+                    <option value="SINPE">SINPE</option>
+                    <option value="Transferencia">Transferencia</option>
+                    <option value="Efectivo">Efectivo</option>
+                </select>
+                <span asp-validation-for="MetodoPago" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Banco" class="control-label mt-3"></label>
+                <select asp-for="Banco">
+                    <option value="BN">Banco Nacional</option>
+                    <option value="BAC">BAC</option>
+                    <option value="BCR">Banco de Costa Rica</option>
+                    <option value="Davivienda">Davivienda</option>
+                </select>
+                <span asp-validation-for="Banco" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Activa" class="control-label mt-3"></label>
+                <select asp-for="Activa">
+                    <option value="A">Activa</option>
+                    <option value="I">Inactiva</option>
+                </select>
+                <span asp-validation-for="Activa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="ReservaId" value="@Model.ReservaId" />
+                <input type="submit" value="Save" class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Back to List</a>
+</div>
+
+<script>
+
+    const tasaCambio = 520;
+
+    function updateValues() {
+        var select = document.getElementById("PaqueteId");
+        var selectedOption = select.options[select.selectedIndex];
+
+        if (selectedOption.value) {
+            var costoPersonaUSD = parseFloat(selectedOption.getAttribute("data-costo-persona"));
+            var primaPorcentaje = parseFloat(selectedOption.getAttribute("data-prima"));
+
+            var cantidadNoches = document.querySelector("[name='CantidadNoches']").value;
+            if (!cantidadNoches) cantidadNoches = 0;
+
+            var montoColones = costoPersonaUSD * cantidadNoches * tasaCambio;
+            var montoDolares = costoPersonaUSD * cantidadNoches;
+            var montoPrima = montoDolares * (primaPorcentaje / 100);
+
+            document.getElementById("MontoTotalColones").value = montoColones.toFixed(2);
+            document.querySelector("[name='MontoTotalDolares']").value = montoDolares.toFixed(2);
+            document.querySelector("[name='MontoPrima']").value = montoPrima.toFixed(2);
+        }
+    }
+
+    window.onload = function () {
+        updateValues();
+    };
+</script>

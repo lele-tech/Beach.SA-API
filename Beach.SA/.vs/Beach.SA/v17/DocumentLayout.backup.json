@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\views\\usuarios\\crearcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\views\\usuarios\\crearcuenta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\views\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|c:\\users\\ibarr\\downloads\\beachsa-api\\beach.sa\\beach.sa\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{894EB413-400F-4E4B-9057-41267725055A}|Beach.SA\\Beach.SA.csproj|solutionrelative:beach.sa\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Program.cs",
+              "RelativeDocumentMoniker": "Beach.SA\\Program.cs",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Program.cs",
+              "RelativeToolTip": "Beach.SA\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAjwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T02:04:20.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Beach.SA\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Models\\Usuario.cs",
+              "RelativeToolTip": "Beach.SA\\Models\\Usuario.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:24:09.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CrearCuenta.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Usuarios\\CrearCuenta.cshtml",
+              "RelativeDocumentMoniker": "Beach.SA\\Views\\Usuarios\\CrearCuenta.cshtml",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Usuarios\\CrearCuenta.cshtml",
+              "RelativeToolTip": "Beach.SA\\Views\\Usuarios\\CrearCuenta.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T21:14:04.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Beach.SA\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Beach.SA\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T21:11:33.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Beach.SA\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Beach.SA\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T09:35:03.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Empleados\\Index.cshtml",
+              "RelativeDocumentMoniker": "Beach.SA\\Views\\Empleados\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Empleados\\Index.cshtml",
+              "RelativeToolTip": "Beach.SA\\Views\\Empleados\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T09:34:45.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Admin\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Beach.SA\\Views\\Admin\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Views\\Admin\\Delete.cshtml",
+              "RelativeToolTip": "Beach.SA\\Views\\Admin\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T09:31:07.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Beach.SA\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\ibarr\\Downloads\\beachsa-api\\Beach.SA\\Beach.SA\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Beach.SA\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAgwFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T09:06:49.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

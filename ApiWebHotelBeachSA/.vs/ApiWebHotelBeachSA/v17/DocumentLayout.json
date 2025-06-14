@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|c:\\users\\ejemplo\\downloads\\proyectogrupo4\\apiwebhotelbeachsa\\apiwebhotelbeachsa\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|solutionrelative:apiwebhotelbeachsa\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|c:\\users\\ejemplo\\downloads\\proyectogrupo4\\apiwebhotelbeachsa\\apiwebhotelbeachsa\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|solutionrelative:apiwebhotelbeachsa\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|c:\\users\\ejemplo\\downloads\\proyectogrupo4\\apiwebhotelbeachsa\\apiwebhotelbeachsa\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|solutionrelative:apiwebhotelbeachsa\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|c:\\users\\ejemplo\\downloads\\proyectogrupo4\\apiwebhotelbeachsa\\apiwebhotelbeachsa\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|solutionrelative:apiwebhotelbeachsa\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|c:\\users\\ejemplo\\downloads\\proyectogrupo4\\apiwebhotelbeachsa\\apiwebhotelbeachsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8F3E94-D6DB-4800-9CE8-8572605D7A6A}|ApiWebHotelBeachSA\\ApiWebHotelBeachSA.csproj|solutionrelative:apiwebhotelbeachsa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ApiWebHotelBeachSA\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ApiWebHotelBeachSA\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T05:32:36.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ApiWebHotelBeachSA\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Models\\Usuario.cs",
+              "RelativeToolTip": "ApiWebHotelBeachSA\\Models\\Usuario.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T05:31:57.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ApiWebHotelBeachSA\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ApiWebHotelBeachSA\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:15:11.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Program.cs",
+              "RelativeDocumentMoniker": "ApiWebHotelBeachSA\\Program.cs",
+              "ToolTip": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\Program.cs",
+              "RelativeToolTip": "ApiWebHotelBeachSA\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T04:11:11.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiWebHotelBeachSA\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ejemplo\\Downloads\\proyectogrupo4\\ApiWebHotelBeachSA\\ApiWebHotelBeachSA\\appsettings.json",
+              "RelativeToolTip": "ApiWebHotelBeachSA\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-27T04:11:08.454Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

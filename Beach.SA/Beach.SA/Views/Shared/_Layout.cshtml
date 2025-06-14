@@ -1,0 +1,106 @@
+﻿@using System.Security.Claims
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Beach.SA</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Beach.SA.styles.css" asp-append-version="true" />
+    <!-- Asegúrate de que FontAwesome esté cargado -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Navbar con color azul oscuro -->
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #003580;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Beach.SA</a>
+                <!-- Botón para mostrar menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Icono de tres barras usando FontAwesome -->
+                    <span class="fas fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-grow-1">
+
+                        @* Verifica si el usuario está autenticado *@
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            // Obtiene el RolId del usuario desde las Claims
+                            var rolId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+                            // Muestra enlaces dependiendo del RolId
+                            if (rolId == "1") // Admin
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Admin" asp-action="Index">Lista Empleados</a>
+                                </li>
+                                <div class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Usuarios" asp-action="CrearCuenta">Crear Empleados</a>
+                                </div>
+                            }
+                            else if (rolId == "3") // Empleado
+                            {
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Empleados" asp-action="Index">Reservas</a>
+                                </li>
+                            }
+                        }
+                    </ul>
+
+                    <!-- Opciones de seguridad (usuario logueado) -->
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                           
+                                <li class="nav-item dropdown">
+                                    <!-- Asegúrate de mantener la clase dropdown-toggle para que funcione el despliegue, pero elimina el texto de la flechita -->
+                                    <a class="nav-link text-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bars"></i> <!-- Solo se muestra el icono de las tres barras -->
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Correo: @User.Identity.Name</a></li>
+                                        <li>
+                                            <form asp-controller="Usuarios" asp-action="Logout" method="post">
+                                            <button type="submit" class="dropdown-item btn btn-custom-danger text-danger">Cerrar sesión</button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-primary bg-white border rounded px-4 py-2 shadow-sm hover:text-white hover:bg-[#0066cc] transition-all" asp-area="" asp-controller="Usuarios" asp-action="Login">
+                                    Iniciar sesión
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Beach.SA - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

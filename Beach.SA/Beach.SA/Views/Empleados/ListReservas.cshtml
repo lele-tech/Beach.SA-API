@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Beach.SA.Models.Reserva>
+
+@{
+    var cedula = ViewData["Cedula"];
+}
+
+<h1>Lista de Reservas</h1>
+
+<p>
+    @Html.ActionLink("Añadir Reservas", "Create", new { id = cedula }, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ReservaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CedCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PaqueteId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadNoches)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaReserva)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Activa)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReservaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CedCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaqueteId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadNoches)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activa)
+            </td>
+            <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.ReservaId, cedula = item.CedCliente }, new { @class = "btn btn-warning" }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.ReservaId }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.ReservaId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

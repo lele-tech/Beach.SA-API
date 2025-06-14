@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Beach.SA.props" />
+</Project>

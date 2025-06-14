@@ -1,0 +1,54 @@
+﻿@model Beach.SA.Models.Usuario
+
+@{
+    ViewData["Title"] = "Crear Cuenta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh; background: #f8f9fa;">
+    <div class="row shadow-lg" style="width: 700px; border-radius: 8px; background: white;">
+        <!-- Columna de la imagen -->
+        <div class="col-md-6 d-none d-md-block p-0">
+            <img src="~/images/crear.jpg" alt="Imagen de crear cuenta" class="img-fluid" style="height: 100%; object-fit: cover; border-radius: 8px 0 0 8px;" />
+        </div>
+
+        <!-- Columna del formulario -->
+        <div class="col-md-6 p-4">
+            <h2 class="text-center text-primary mb-3">Crear Cuenta</h2>
+
+            <form asp-action="CrearCuenta" id="FormularioLogin">
+                @* Email *@
+                <div class="form-group mb-2">
+                    <label asp-for="Email" class="form-label d-block text-center">Correo Electrónico</label>
+                    <input asp-for="Email" class="form-control shadow-sm" placeholder="example@gmail.com" style="border-radius: 6px;" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                @* Nombre Completo *@
+                <div class="form-group mb-2">
+                    <label asp-for="NombreCompleto" class="form-label d-block text-center">Nombre Completo</label>
+                    <input asp-for="NombreCompleto" class="form-control shadow-sm" placeholder="Nombre Apellidos" style="border-radius: 6px;" />
+                    <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                </div>
+
+                @* Contraseña *@
+                <div class="form-group mb-2">
+                    <label asp-for="Password" class="form-label d-block text-center">Contraseña</label>
+                    <input asp-for="Password" class="form-control shadow-sm" type="password" style="border-radius: 6px;" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                @* Confirmación de Contraseña *@
+                <div class="form-group mb-3">
+                    <label for="confirmar" class="form-label d-block text-center">Confirmar Contraseña</label>
+                    <input name="confirmar" class="form-control shadow-sm" type="password" style="border-radius: 6px;" />
+                </div>
+
+                @* Botón Aceptar *@
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-secundario btn-lg shadow-sm" style="border-radius: 6px;">Aceptar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
